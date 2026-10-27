@@ -1558,7 +1558,18 @@
       box-shadow: 0 10px 24px rgba(0,0,0,0.65) !important;
     }
 
-</style>
+    @keyframes pulse-fbc-btn {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(200, 40, 56, 0.45); }
+      50% { box-shadow: 0 0 0 5px rgba(200, 40, 56, 0); }
+    }
+    .fbc-portfolio-link {
+      animation: pulse-fbc-btn 2.8s infinite;
+    }
+    .fbc-portfolio-link:hover {
+      transform: translateY(-1px);
+    }
+
+    </style>
 </head>
 <body class="mode-control antialiased selection:bg-[#181818] selection:text-[#F4F0E8] pb-16">
 
@@ -1869,9 +1880,20 @@
                 <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b brutal-border">
                   <h3 contenteditable="true" class="heading-tone text-base sm:text-lg font-bold">《双层市政办公楼 POI》— 微恐射击 PVEVP 室内建筑关卡设计
                   </h3>
-                  <span contenteditable="true" class="remedy-badge text-xs px-2 py-0.5 skill-pill">
-                    2D LAYOUT + UE5白盒（个人作品 / 自学）
-                  </span>
+                  <div class="w-full flex flex-wrap items-center justify-between gap-2 pt-0.5">
+                    <span contenteditable="true" class="remedy-badge text-xs px-2 py-0.5 skill-pill">
+                      2D LAYOUT + UE5白盒（个人作品 / 自学）
+                    </span>
+                    <a
+                      href="https://kcn43cuz2ihg.feishu.cn/wiki/PO8wwobJniYwaJk7cSXcUu4znwe?from=from_copylink"
+                      target="_blank"
+                      class="fbc-portfolio-link inline-flex items-center gap-1.5 text-xs font-mono-dossier font-bold px-3 py-1 bg-[#C82838] text-[#FAF8F5] hover:bg-[#a81f2d] transition uppercase tracking-wider border border-[#C82838] shadow-sm"
+                      title="点击在新窗口打开飞书完整白盒设计案与实机演示"
+                    >
+                      <span>🔗</span>
+                      <span>飞书完整白盒设计案与实机演示 ➔</span>
+                    </a>
+                  </div>
                 </div>
 
                 <ul class="sec2-breakdown-list space-y-4 text-sm sm:text-base leading-relaxed body-tone list-none pl-0">
@@ -2486,8 +2508,17 @@
         <div id="fbc-lightbox-caption" class="font-bold text-[#181818] text-xs sm:text-sm tracking-wide">
           1F挑空双层枪线
         </div>
-        <div class="text-[10px] sm:text-xs fbc-evid-hint tracking-wider opacity-90">
-          ● 点击图片外区域、关闭按钮或按 ESC 即可退出放大检视
+        <div class="flex items-center gap-3">
+          <a
+            href="https://kcn43cuz2ihg.feishu.cn/wiki/PO8wwobJniYwaJk7cSXcUu4znwe?from=from_copylink"
+            target="_blank"
+            class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono-dossier font-bold bg-[#C82838] text-white hover:bg-[#a81f2d] transition shadow-xs"
+          >
+            <span>🔗 打开飞书完整设计案与实机演示 ➔</span>
+          </a>
+          <div class="text-[10px] sm:text-xs fbc-evid-hint tracking-wider opacity-90 hidden md:inline">
+            ● 点击图片外区域或按 ESC 退出
+          </div>
         </div>
       </div>
     </div>
