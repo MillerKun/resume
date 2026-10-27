@@ -877,29 +877,49 @@
         font-weight: 800 !important;
       }
 
-      /* Hero 4-Column Metadata Grid in ONE Line */
-      .aw2-hero-banner .grid.md\:grid-cols-4 {
+      /* Hero 4-Column Metadata Grid in ONE Line (Guaranteed PDF Output) */
+      .hero-meta-strip,
+      #hero-meta-strip,
+      .aw2-hero-banner #hero-meta-strip,
+      .aw2-hero-banner .hero-meta-strip {
         display: grid !important;
-        grid-template-columns: 1fr 1.1fr 1.05fr 1.35fr !important;
-        gap: 2.5mm !important;
-        padding-top: 1.8mm !important;
-        margin-top: 2mm !important;
-        border-top: 1px solid rgba(24, 24, 24, 0.25) !important;
+        grid-template-columns: 1fr 1.12fr 1.25fr 1.85fr !important;
+        gap: 2.2mm !important;
+        padding-top: 1.5mm !important;
+        margin-top: 1.8mm !important;
+        border-top: 1px solid rgba(24, 24, 24, 0.3) !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+      }
+
+      .aw2-hero-banner {
+        overflow: visible !important;
       }
 
       .hero-meta-label {
-        font-size: 7.2px !important;
-        color: #5A5752 !important;
-        letter-spacing: 0.05em !important;
+        font-size: 7.8px !important;
+        font-weight: 800 !important;
+        color: #3A3732 !important;
+        letter-spacing: 0.04em !important;
         margin-bottom: 0.5px !important;
         white-space: nowrap !important;
+        display: block !important;
       }
 
       .hero-meta-value {
-        font-size: 9.2px !important;
-        color: #181818 !important;
-        font-weight: 700 !important;
+        font-size: 10.5px !important;
+        color: #111111 !important;
+        font-weight: 800 !important;
         white-space: nowrap !important;
+        display: block !important;
+      }
+
+      .hero-meta-engines {
+        font-size: 8.8px !important;
+        font-weight: 600 !important;
+        color: #181818 !important;
+        white-space: nowrap !important;
+        display: block !important;
       }
 
       /* Spacing between sections */
@@ -1421,7 +1441,13 @@
     body.mode-control .aw2-hero-banner .font-semibold {
       color: #111111 !important;
     }
-    body.mode-control .aw2-hero-banner .hero-meta-label,
+    body.mode-control .aw2-hero-banner .hero-meta-label {
+      color: #333333 !important;
+      font-weight: 800 !important;
+    }
+    body.mode-control .aw2-hero-banner .hero-meta-value {
+      color: #111111 !important;
+    }
     body.mode-control .aw2-hero-banner .font-mono-dossier {
       color: #4A4742 !important;
     }
@@ -1718,22 +1744,22 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-5 mt-6 border-t border-[#9AA8A0]/20 font-mono-dossier text-xs">
+        <div id="hero-meta-strip" class="hero-meta-strip grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 pt-4 mt-5 border-t border-[#9AA8A0]/25 font-mono-dossier">
           <div>
-            <span class="hero-meta-label text-[#727E78] block uppercase mb-0.5">LOCATION / 意向城市</span>
-            <span class="hero-meta-value font-semibold text-[#C6D0CB]">深圳 (SHENZHEN)</span>
+            <span class="hero-meta-label text-[#727E78] font-bold block uppercase mb-0.5 text-[11px] sm:text-xs">LOCATION / 意向城市</span>
+            <span class="hero-meta-value font-bold text-[#EAE5DC] text-sm sm:text-[14.5px]">深圳 (SHENZHEN)</span>
           </div>
           <div>
-            <span class="hero-meta-label text-[#727E78] block uppercase mb-0.5">HOTLINE / 电话与微信</span>
-            <span class="hero-meta-value font-semibold text-[#C6D0CB]">173-2449-5560</span>
+            <span class="hero-meta-label text-[#727E78] font-bold block uppercase mb-0.5 text-[11px] sm:text-xs">HOTLINE / 电话与微信</span>
+            <span class="hero-meta-value font-bold text-[#EAE5DC] text-sm sm:text-[14.5px] tracking-wide">173-2449-5560</span>
           </div>
           <div>
-            <span class="hero-meta-label text-[#727E78] block uppercase mb-0.5">EMAIL / 邮箱频段</span>
-            <span class="hero-meta-value font-semibold text-[#C6D0CB]">ma.tailu@163.com</span>
+            <span class="hero-meta-label text-[#727E78] font-bold block uppercase mb-0.5 text-[11px] sm:text-xs">EMAIL / 邮箱频段</span>
+            <span class="hero-meta-value font-bold text-[#EAE5DC] text-sm sm:text-[14.5px]">ma.tailu@163.com</span>
           </div>
           <div>
-            <span class="hero-meta-label text-[#727E78] block uppercase mb-0.5">ENGINES / 核心工具链</span>
-            <span class="hero-meta-value font-semibold text-[#C6D0CB]">Unity / Cocos / UE5 (自学实践) / Figma</span>
+            <span class="hero-meta-label text-[#727E78] font-bold block uppercase mb-0.5 text-[11px] sm:text-xs">ENGINES / 核心工具链</span>
+            <span class="hero-meta-value hero-meta-engines font-semibold text-[#C6D0CB] text-xs sm:text-[12px] leading-snug">Unity / Cocos / UE5 (自学实践) / Figma</span>
           </div>
         </div>
       </header>
