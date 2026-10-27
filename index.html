@@ -828,9 +828,27 @@
       /* Hero Main Grid: Left Name & Subtitle, Right Metrics Card */
       .aw2-hero-banner .grid.lg\:grid-cols-12 {
         display: grid !important;
-        grid-template-columns: 1fr 78mm !important;
+        grid-template-columns: 1fr 66mm !important;
         gap: 3.5mm !important;
-        align-items: end !important;
+        align-items: start !important;
+      }
+
+      .hero-metrics-col,
+      .aw2-hero-banner .hero-metrics-col {
+        justify-content: flex-start !important;
+        align-self: start !important;
+        margin-top: 1mm !important;
+      }
+
+      .hero-tagline,
+      .aw2-hero-banner .hero-tagline {
+        font-size: 9.6px !important;
+        font-weight: 700 !important;
+        color: #181818 !important;
+        white-space: nowrap !important;
+        display: inline-block !important;
+        letter-spacing: 0.02em !important;
+        margin-top: 1mm !important;
       }
 
       .aw2-hero-banner .lg\:col-span-8 {
@@ -1726,13 +1744,13 @@
                 LEVEL DESIGNER // SHOOTER &amp; PVEVP POI
               </span>
               <span class="text-[#9AA8A0]/40">//</span>
-              <span class="text-sm sm:text-base font-semibold tracking-wider text-[#9AA8A0]">
+              <span class="hero-tagline text-sm sm:text-base font-semibold tracking-wider text-[#9AA8A0] whitespace-nowrap">
                 游戏关卡策划（射击 PVEVP / 建筑 POI / 战斗机制复合主轴）
               </span>
             </div>
           </div>
 
-          <div class="lg:col-span-5 flex flex-col justify-end items-start lg:items-end font-mono-dossier text-xs">
+          <div class="hero-metrics-col lg:col-span-5 flex flex-col justify-start items-start lg:items-end font-mono-dossier text-xs">
             <div class="hero-status-card border border-[#9AA8A0]/30 bg-white/[0.02] p-3.5 w-full">
               <div class="text-[#727E78] mb-1.5">
                 <span>CANDIDATE METRICS</span>
